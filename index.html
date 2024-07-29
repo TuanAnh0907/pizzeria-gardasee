@@ -1,12 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
     <title>Meine Pizzeria - Pizza, Pasta, Salate, Baguettes</title>
+    <meta charset="UTF-8" content="">
     <meta content="de" http-equiv="Content-Language"/>
     <meta content="text/html; charset=windows-1252" http-equiv="Content-Type"/>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript1.2" src="javascript.js"></script>
     <meta content="TABTICVQDS" name="SKYPE_FRAMEID"/>
     <meta content="TABTICVQDS" name="SKYPE_FRAMEID"/>
     <meta content="TABTICVQDS" name="SKYPE_FRAMEID"/>
@@ -19,17 +19,68 @@
     <meta content="TABTICVQDS" name="SKYPE_FRAMEID"/>
     <meta content="TABTICVQDS" name="SKYPE_FRAMEID"/>
     <meta content="metacontent" id="skype_v3_tb_marker_id" name="SKYPE_PARSING_HAS_FINISHED"/>
-    <script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script language="JavaScript1.2" src="javascript.js" type=""></script>
+    <script type="">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <style type="text/css">
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin: 0;
+            padding: 1rem 0;
+            width: 150px;
+            cursor: pointer;
+            background-color: whitesmoke;
+            border-radius: 3px;
+            top: 0;
+            right: -150px;
+        }
+
+        .dropdown > a {
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            color: black !important;
+        }
+
+        .dropdown-content li {
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .dropdown-content a:hover {
+            color: #ddaa44;
+        }
+
+    </style>
 </head>
 <body
-    onload="MM_preloadImages('grafik/menue/aktiv/home.gif','grafik/menue/aktiv/speisekarte.gif','grafik/menue/aktiv/bestellung.gif','grafik/menue/aktiv/ueberuns.gif','grafik/menue/aktiv/kontakt.gif','grafik/menue/aktiv/impressum.gif')">
+        onload="MM_preloadImages('grafik/menue/aktiv/home.gif','grafik/menue/aktiv/speisekarte.gif','grafik/menue/aktiv/bestellung.gif','grafik/menue/aktiv/ueberuns.gif','grafik/menue/aktiv/kontakt.gif','grafik/menue/aktiv/impressum.gif')">
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
     <tbody>
     <tr align="left" bgcolor="#ffffff" valign="top">
@@ -108,8 +159,9 @@
             <img alt="" height="36" src="grafik/kopf05.gif" width="10"/></td>
         <td>
             <img alt="" height="36" src="grafik/oeffnungszeiten.gif" width="190"/></td>
-        <td align="right" background="grafik/kopfbg01.gif" colspan="2">
-            <img alt="" height="36" src="grafik/kopfbg03.jpg" width="142"/></td>
+        <td align="right" background="grafik/kopfbg01.gif" colspan="2" style="position: relative">
+            <img alt="" height="36" src="grafik/kopfbg03.jpg" width="142"/>
+        </td>
         <td>
             <img alt="" height="36" src="grafik/kopf06.jpg" width="285"/></td>
         <td>
@@ -168,11 +220,18 @@
                 </tbody>
             </table>
             <p>
-                &nbsp;</p>
-            <p>
                 <img alt="" height="31" src="grafik/pizzataxi.gif" width="190"/><br/>
                 <span class="pizzataxi">0 20 51 / 24 21 1<br/>
-							Telefonische Annahme, bis 15 Min vor Ladenschluss.</span></p>
+							Telefonische Annahme, bis 15 Min vor Ladenschluss.</span>
+            </p>
+
+            <div class="dropdown" style="width: 100%; position: relative">
+                <a href="#"><p style="font-size: 15px; color: white">Position</p></a>
+                <ul class="dropdown-content">
+                    <li><a>Ha Noi</a></li>
+                    <li><a>TP.Ho Chi Minh</a></li>
+                </ul>
+            </div>
         </td>
         <td align="right" colspan="3" rowspan="3">
             <table border="0" cellpadding="0" cellspacing="0" width="506">
@@ -241,6 +300,52 @@
                             </tr>
                             </tbody>
                         </table>
+
+                        <section style="margin-top:20px; background-color: white; border-radius: 15px; padding: 10px">
+                            <h2 style="color: #2E8B57; font-weight: bolder; font-size: 35px">Bài viết mới nhất</h2>
+                            <ul class="list-articles" style="list-style: none; padding: 0">
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/tong-hop-16-quan-nhau-tai-phuong-4-quan-10.p664">
+                                        Tổng hợp 16 quán nhậu tại Phường 4 Quận 10
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/tong-hop-11-quan-tra-sua-tai-phuong-4-quan-10.p663">
+                                        Tổng hợp 11 quán trà sữa tại Phường 4 Quận 10
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/top-17-quan-cafe-tai-phuong-15-quan-4.p662">
+                                        Top 17 quán cafe tại Phường 15 Quận 4
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/top-11-quan-nhau-tai-phuong-8-quan-11.p661">
+                                        Top 11 quán nhậu tại Phường 8 Quận 11
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/danh-sach-10-quan-an-sang-tai-phuong-5-quan-6.p660">
+                                        Danh sách 10 quán ăn sáng tại Phường 5 Quận 6
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/danh-sach-13-quan-nhau-tai-phuong-5-quan-6.p659">
+                                        Danh sách 13 quán nhậu tại Phường 5 Quận 6
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/danh-sach-14-quan-nhau-tai-phuong-6-quan-6.p658">
+                                        Danh sách 14 quán nhậu tại Phường 6 Quận 6
+                                    </a>
+                                </li>
+                                <li class="article-item">
+                                    <a href="https://amthucbinhxuyen.com/post/top-15-quan-cafe-tai-phuong-5-quan-6.p657">
+                                        Top 15 quán cafe tại Phường 5 Quận 6
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
                     </td>
                 </tr>
                 </tbody>
